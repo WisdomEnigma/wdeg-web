@@ -1,0 +1,10 @@
+[book]
+authors = ["Ali2210"]
+language = "en"
+multilingual = false
+src = "src"
+title = "wisdomenigma"
+
+
+[output.html.playground]
+runnable = true
