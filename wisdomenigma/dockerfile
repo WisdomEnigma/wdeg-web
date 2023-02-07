@@ -1,0 +1,14 @@
+FROM rust:1-buster
+
+RUN mkdir -p app
+
+ADD  . /app
+
+WORKDIR /app
+
+RUN cargo install mdbook
+
+COPY book.toml book.toml ./
+
+RUN mdbook build
+
